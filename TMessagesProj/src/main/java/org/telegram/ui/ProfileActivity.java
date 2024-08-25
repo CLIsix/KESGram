@@ -102,9 +102,9 @@ import com.exteragram.messenger.utils.AppUtils;
 import com.exteragram.messenger.utils.CanvasUtils;
 import com.exteragram.messenger.utils.ChatUtils;
 import com.exteragram.messenger.utils.LocaleUtils;
-import com.radolyn.ayugram.AyuConfig;
+import com.clisix.kesgram.AyuConfig;
 
-import com.radolyn.ayugram.ui.preferences.AyuGramPreferencesActivity;
+import com.clisix.kesgram.ui.preferences.AyuGramPreferencesActivity;
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.AccountInstance;
 import org.telegram.messenger.AndroidUtilities;
@@ -8995,7 +8995,7 @@ public class ProfileActivity extends BaseFragment implements NotificationCenter.
                     cell.getTextView().setMovementMethod(null);
                     try {
                         PackageInfo info = ApplicationLoader.applicationContext.getPackageManager().getPackageInfo(ApplicationLoader.applicationContext.getPackageName(), 0);
-                        cell.setText(LocaleUtils.getAppName() + " " + BuildVars.BUILD_VERSION_STRING + " (" + BuildVars.AYU_VERSION + ")" + (AppUtils.isAppModified() ? "\nbased on @exteraGram " + info.versionCode : ""));
+                        cell.setText(LocaleUtils.getAppName() + " " + BuildVars.BUILD_VERSION_STRING + " (" + BuildVars.AYU_VERSION + ")" + (AppUtils.isAppModified() ? "\nbased on AyuGram " + info.versionCode : ""));
                     } catch (PackageManager.NameNotFoundException e) {
                         FileLog.e(e);
                     }

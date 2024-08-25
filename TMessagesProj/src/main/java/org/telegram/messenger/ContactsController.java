@@ -30,7 +30,7 @@ import android.util.SparseArray;
 import androidx.collection.LongSparseArray;
 
 import com.exteragram.messenger.boost.filter.ZalgoFilter;
-import com.radolyn.ayugram.AyuConstants;
+import com.clisix.kesgram.AyuConstants;
 
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.tgnet.ConnectionsManager;

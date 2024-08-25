@@ -70,11 +70,9 @@ import com.exteragram.messenger.ExteraConfig;
 import com.exteragram.messenger.camera.CameraXController;
 import com.exteragram.messenger.camera.CameraXUtils;
 import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.util.Log;
 
-import com.radolyn.ayugram.AyuConfig;
+import com.clisix.kesgram.AyuConfig;
 import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.AnimationNotificationsLocker;
 import org.telegram.messenger.ApplicationLoader;
 import org.telegram.messenger.AutoDeleteMediaTask;
 import org.telegram.messenger.BuildVars;

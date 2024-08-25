@@ -109,8 +109,6 @@ import com.exteragram.messenger.boost.encryption.EncryptionHelper;
 import com.exteragram.messenger.utils.ChatUtils;
 import com.exteragram.messenger.utils.PopupUtils;
 import com.exteragram.messenger.utils.TranslatorUtils;
-import com.radolyn.ayugram.AyuConfig;
-import com.radolyn.ayugram.utils.AyuState;
 
 import org.telegram.messenger.AccountInstance;
 import org.telegram.messenger.AndroidUtilities;
@@ -3498,6 +3496,7 @@ public class ChatActivityEnterView extends BlurredFrameLayout implements Notific
 
             boolean scheduleButtonValue = parentFragment != null && parentFragment.canScheduleMessage();
             boolean sendWithoutSoundButtonValue = !(self || slowModeTimer > 0 && !isInScheduleMode());
+            boolean sendKesgramButtonValue = !(self || slowModeTimer > 0);
             ActionBarMenuSubItem translateButton = new TranslateBeforeSendWrapper(getContext(), true, !scheduleButtonValue && !sendWithoutSoundButtonValue, resourcesProvider) {
                 @Override
                 protected void onClick() {

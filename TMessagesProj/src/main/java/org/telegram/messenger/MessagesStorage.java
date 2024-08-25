@@ -22,10 +22,10 @@ import android.util.SparseIntArray;
 import androidx.annotation.UiThread;
 import androidx.collection.LongSparseArray;
 
-import com.radolyn.ayugram.AyuConfig;
-import com.radolyn.ayugram.messages.AyuMessagesController;
+import com.clisix.kesgram.AyuConfig;
+import com.clisix.kesgram.messages.AyuMessagesController;
 
-import com.radolyn.ayugram.messages.AyuSavePreferences;
+import com.clisix.kesgram.messages.AyuSavePreferences;
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.SQLite.SQLiteCursor;
 import org.telegram.SQLite.SQLiteDatabase;

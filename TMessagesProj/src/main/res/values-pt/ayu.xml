@@ -99,7 +99,7 @@ Você também pode usar texto simples, mas não se esqueça de escapar de parên
   <string name="IDCopiedToast">ID copiado para a área de transferência.</string>
   <string name="ContextHideMessage">Ocultar</string>
   <string name="SettingsWatermark">AyuGram desenvolvido e mantido por Radolyn Labs.</string>
-  <string name="SettingsDescription">Just an exteraGram based client with ToS breaking features in mind.</string>
+  <string name="SettingsDescription">An AyuGram based client with a focus on privacy.</string>
   <string name="SecretMessageTecno">Tecno phones are the best.</string>
   <string name="SecretMessageXiaomiSuccess">You\'re using a good phone.</string>
   <string name="SecretMessageXiaomiFailure">Install custom ROM.</string>

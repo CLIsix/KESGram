@@ -23,7 +23,7 @@ import androidx.core.content.FileProvider;
 
 import com.exteragram.messenger.utils.ChatUtils;
 import com.google.zxing.Dimension;
-import com.radolyn.ayugram.messages.AyuMessagesController;
+import com.clisix.kesgram.messages.AyuMessagesController;
 
 import org.telegram.messenger.AccountInstance;
 import org.telegram.messenger.AndroidUtilities;

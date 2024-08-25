@@ -1901,6 +1901,7 @@ public class ShareAlert extends BottomSheet implements NotificationCenter.Notifi
             sendPopupLayout2.addView(translateButton, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));
         }
         ActionBarMenuSubItem sendWithoutSound = new ActionBarMenuSubItem(getContext(), true, true, resourcesProvider);
+
         if (darkTheme) {
             sendWithoutSound.setTextColor(getThemedColor(Theme.key_voipgroup_nameText));
             sendWithoutSound.setIconColor(getThemedColor(Theme.key_windowBackgroundWhiteHintText));
@@ -1914,6 +1915,22 @@ public class ShareAlert extends BottomSheet implements NotificationCenter.Notifi
             }
             sendInternal(false);
         });
+
+        ActionBarMenuSubItem sendKesgram = new ActionBarMenuSubItem(getContext(), true, true, resourcesProvider);
+        if (darkTheme) {
+            sendKesgram.setTextColor(getThemedColor(Theme.key_voipgroup_nameText));
+            sendKesgram.setIconColor(getThemedColor(Theme.key_windowBackgroundWhiteHintText));
+        }
+        sendKesgram.setTextAndIcon(LocaleController.getString("SendKesgram", R.string.SendKesgram), R.drawable.msg_filled_passcode_on_solar);
+        sendKesgram.setMinimumWidth(AndroidUtilities.dp(196));
+        sendPopupLayout2.addView(sendKesgram, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));
+        sendKesgram.setOnClickListener(v -> {
+            if (sendPopupWindow != null && sendPopupWindow.isShowing()) {
+                sendPopupWindow.dismiss();
+            }
+            //sendInternal(false);
+        });
+
         ActionBarMenuSubItem sendMessage = new ActionBarMenuSubItem(getContext(), true, true, resourcesProvider);
         if (darkTheme) {
             sendMessage.setTextColor(getThemedColor(Theme.key_voipgroup_nameText));

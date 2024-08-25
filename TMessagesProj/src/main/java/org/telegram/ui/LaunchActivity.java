@@ -94,10 +94,10 @@ import com.google.android.gms.common.api.Status;
 import com.google.firebase.appindexing.Action;
 import com.google.firebase.appindexing.FirebaseUserActions;
 import com.google.firebase.appindexing.builders.AssistActionBuilder;
-import com.radolyn.ayugram.AyuConfig;
-import com.radolyn.ayugram.AyuConstants;
-import com.radolyn.ayugram.AyuCustomHandlers;
-import com.radolyn.ayugram.AyuUtils;
+import com.clisix.kesgram.AyuConfig;
+import com.clisix.kesgram.AyuConstants;
+import com.clisix.kesgram.AyuCustomHandlers;
+import com.clisix.kesgram.AyuUtils;
 
 import org.telegram.PhoneFormat.PhoneFormat;
 import org.telegram.messenger.AccountInstance;

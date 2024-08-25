@@ -1312,6 +1312,8 @@
     <string name="TapForVideo">Tap for photo, hold for video</string>
     <string name="TapToViewAsList">Tap to view as a list.</string>
     <string name="SendWithoutSound">Send without sound</string>
+    <string name="SendKesgram">Send KESGram Encrypted Message</string>
+    <string name="KesPreferences">KESGram Preferences</string>
     <string name="SendAsNewPhoto">Send as a new photo</string>
     <string name="ReplacePhoto">Replace photo</string>
     <string name="MessageScheduleSend">Send Now</string>

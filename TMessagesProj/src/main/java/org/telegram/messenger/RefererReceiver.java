@@ -12,7 +12,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-import com.radolyn.ayugram.AyuConstants;
+import com.clisix.kesgram.AyuConstants;
 
 public class RefererReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {

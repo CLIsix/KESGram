@@ -2595,9 +2595,12 @@ public class ChatAttachAlert extends BottomSheet implements NotificationCenter.N
                     } else {
                         itemCells[a].setTextAndIcon(LocaleController.getString("ScheduleMessage", R.string.ScheduleMessage), R.drawable.msg_calendar2);
                     }
-                } else {
+                } else if (num == 2) {
                     itemCells[a].setTextAndIcon(LocaleController.getString("SendWithoutSound", R.string.SendWithoutSound), R.drawable.input_notify_off);
+                } else {
+                    itemCells[a].setTextAndIcon(LocaleController.getString("SendKesgram", R.string.SendKesgram), R.drawable.msg_filled_passcode_on_solar);
                 }
+
                 itemCells[a].setMinimumWidth(AndroidUtilities.dp(196));
 
                 sendPopupLayout.addView(itemCells[a], LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));

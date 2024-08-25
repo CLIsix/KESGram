@@ -21,7 +21,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
 import com.google.android.exoplayer2.util.Log;
-import com.radolyn.ayugram.AyuConfig;
+import com.clisix.kesgram.AyuConfig;
 import org.telegram.ui.LaunchActivity;
 
 import java.util.Random;

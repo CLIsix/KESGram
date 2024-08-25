@@ -12,16 +12,19 @@
 -->
 
 <resources>
-    <string name="exteraAppName" translatable="false">AyuGram</string>
-    <string name="Preferences">exteraGram Preferences</string>
+    <string name="exteraAppName" translatable="false">KESGram</string>
+    <string name="Preferences">KESGram Preferences</string>
 
     <!-- Main Menu -->
-    <string name="Links">Links</string>
+    <string name="Links">KESGram Links</string>
     <string name="AboutExteraDescription">Experimental Telegram client based on Official Sources!</string>
     <string name="Channel">Channel</string>
     <string name="Crowdin">Translate</string>
     <string name="SourceCode">Source Code</string>
-    <string name="Categories">Categories</string>
+    <string name="Categories">ExteraGram Settings</string>
+
+    <string name="kesCategories">KESGram Settings</string>
+    <string name="kesServer">Key Exchange Swarm</string>
 
     <!-- Appearance -->
     <string name="AvatarCorners">Avatar Corners</string>

@@ -39,9 +39,9 @@ import com.exteragram.messenger.camera.CameraXUtils;
 import com.exteragram.messenger.utils.CrashlyticsUtils;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.crashlytics.FirebaseCrashlytics;
-import com.radolyn.ayugram.AyuConfig;
+import com.clisix.kesgram.AyuConfig;
 
-import com.radolyn.ayugram.sync.AyuSyncController;
+import com.clisix.kesgram.sync.AyuSyncController;
 import org.telegram.messenger.voip.VideoCapturerDevice;
 import org.telegram.tgnet.ConnectionsManager;
 import org.telegram.tgnet.TLRPC;

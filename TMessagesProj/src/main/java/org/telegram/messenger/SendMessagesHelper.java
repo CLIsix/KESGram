@@ -48,10 +48,10 @@ import androidx.collection.LongSparseArray;
 import androidx.core.view.inputmethod.InputContentInfoCompat;
 
 import com.exteragram.messenger.ExteraConfig;
-import com.radolyn.ayugram.AyuConfig;
-import com.radolyn.ayugram.AyuForwarder;
-import com.radolyn.ayugram.AyuUtils;
-import com.radolyn.ayugram.utils.AyuState;
+import com.clisix.kesgram.AyuConfig;
+import com.clisix.kesgram.AyuForwarder;
+import com.clisix.kesgram.AyuUtils;
+import com.clisix.kesgram.utils.AyuState;
 
 import org.json.JSONObject;
 import org.telegram.messenger.audioinfo.AudioInfo;

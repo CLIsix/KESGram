@@ -211,7 +211,13 @@ public class ContentPreviewViewer {
                 ArrayList<Integer> icons = new ArrayList<>();
                 menuVisible = true;
                 containerView.invalidate();
+
+                items.add(LocaleController.getString("SendKesgram", R.string.SendKesgram));
+                icons.add(R.drawable.msg_filled_passcode_on_solar);
+                actions.add(3);
+
                 if (delegate != null) {
+
                     if (delegate.needSend(currentContentType) && !delegate.isInScheduleMode()) {
                         items.add(LocaleController.getString("SendStickerPreview", R.string.SendStickerPreview));
                         icons.add(R.drawable.msg_send);
@@ -479,6 +485,7 @@ public class ContentPreviewViewer {
                     valueAnimator.start();
                 }
             } else if (delegate != null) {
+
                 menuVisible = true;
                 containerView.invalidate();
                 ArrayList<CharSequence> items = new ArrayList<>();
@@ -495,6 +502,8 @@ public class ContentPreviewViewer {
                     icons.add(R.drawable.input_notify_off);
                     actions.add(4);
                 }
+
+
                 if (delegate.canSchedule()) {
                     items.add(LocaleController.getString("Schedule", R.string.Schedule));
                     icons.add(R.drawable.msg_autodelete);

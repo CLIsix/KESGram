@@ -118,7 +118,7 @@ public class LocaleUtils {
         try {
             return ApplicationLoader.applicationContext.getString(R.string.exteraAppName);
         } catch (Exception e) {
-            return "AyuGram";
+            return "KESGram";
         }
     }
 }

@@ -33,8 +33,8 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.util.Consumer;
 
-import com.radolyn.ayugram.messages.AyuSavePreferences;
-import com.radolyn.ayugram.utils.AyuState;
+import com.clisix.kesgram.messages.AyuSavePreferences;
+import com.clisix.kesgram.utils.AyuState;
 import org.telegram.SQLite.SQLiteCursor;
 import org.telegram.SQLite.SQLiteDatabase;
 import org.telegram.SQLite.SQLiteException;
@@ -86,9 +86,9 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CountDownLatch;
 
-import com.radolyn.ayugram.AyuConfig;
-import com.radolyn.ayugram.AyuConstants;
-import com.radolyn.ayugram.messages.AyuMessagesController;
+import com.clisix.kesgram.AyuConfig;
+import com.clisix.kesgram.AyuConstants;
+import com.clisix.kesgram.messages.AyuMessagesController;
 
 public class MessagesController extends BaseController implements NotificationCenter.NotificationCenterDelegate {
 

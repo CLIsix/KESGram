@@ -14,7 +14,7 @@ import android.os.SystemClock;
 import android.util.Base64;
 import android.util.LongSparseArray;
 
-import com.radolyn.ayugram.AyuConfig;
+import com.clisix.kesgram.AyuConfig;
 import org.telegram.tgnet.SerializedData;
 import org.telegram.tgnet.TLRPC;
 

@@ -16,10 +16,10 @@ import android.util.LongSparseArray;
 import android.util.SparseArray;
 import android.util.SparseIntArray;
 
-import com.radolyn.ayugram.AyuConfig;
-import com.radolyn.ayugram.AyuConstants;
-import com.radolyn.ayugram.messages.AyuMessagesController;
-import com.radolyn.ayugram.messages.AyuSavePreferences;
+import com.clisix.kesgram.AyuConfig;
+import com.clisix.kesgram.AyuConstants;
+import com.clisix.kesgram.messages.AyuMessagesController;
+import com.clisix.kesgram.messages.AyuSavePreferences;
 import org.telegram.SQLite.SQLiteCursor;
 import org.telegram.messenger.support.LongSparseIntArray;
 import org.telegram.tgnet.AbstractSerializedData;

@@ -26,7 +26,7 @@ import android.widget.TextView;
 import com.exteragram.messenger.ExteraConfig;
 import com.exteragram.messenger.utils.LocaleUtils;
 import com.exteragram.messenger.utils.UpdaterUtils;
-import com.radolyn.ayugram.AyuConstants;
+import com.clisix.kesgram.AyuConstants;
 
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.BuildVars;

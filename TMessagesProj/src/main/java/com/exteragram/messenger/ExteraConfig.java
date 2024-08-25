@@ -20,7 +20,7 @@ import com.exteragram.messenger.camera.CameraXUtils;
 import com.exteragram.messenger.icons.BaseIconSet;
 import com.exteragram.messenger.icons.EmptyIconSet;
 import com.exteragram.messenger.icons.SolarIconSet;
-import com.radolyn.ayugram.AyuConstants;
+import com.clisix.kesgram.AyuConstants;
 
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.ApplicationLoader;

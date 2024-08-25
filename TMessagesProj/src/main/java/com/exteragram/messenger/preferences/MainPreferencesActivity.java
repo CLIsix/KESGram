@@ -27,7 +27,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.exteragram.messenger.preferences.components.HeaderSettingsCell;
 import com.exteragram.messenger.preferences.updater.UpdaterBottomSheet;
-import com.radolyn.ayugram.ui.preferences.AyuGramPreferencesActivity;
 
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.BuildVars;
@@ -57,8 +56,11 @@ public class MainPreferencesActivity extends BasePreferencesActivity {
 
     private int categoryDividerRow;
     private int aboutExteraDividerRow;
-
     private int infoHeaderRow;
+
+    private int kesgramRow;
+    private int kesServerRow;
+
     private int aboutExteraRow;
     private int sourceCodeRow;
     private int channelRow;
@@ -194,6 +196,14 @@ public class MainPreferencesActivity extends BasePreferencesActivity {
         aboutExteraRow = newRow();
         aboutExteraDividerRow = newRow();
 
+        kesgramRow = newRow();
+        kesServerRow = newRow();
+
+        infoHeaderRow = newRow();
+        channelRow = newRow();
+        sourceCodeRow = newRow();
+        infoDividerRow = newRow();
+
         categoryHeaderRow = newRow();
         generalRow = newRow();
         appearanceRow = newRow();
@@ -201,12 +211,6 @@ public class MainPreferencesActivity extends BasePreferencesActivity {
         otherRow = newRow();
         categoryDividerRow = newRow();
 
-        infoHeaderRow = newRow();
-        channelRow = newRow();
-        groupRow = newRow();
-        crowdinRow = newRow();
-        sourceCodeRow = newRow();
-        infoDividerRow = newRow();
     }
 
     @Override
@@ -215,13 +219,15 @@ public class MainPreferencesActivity extends BasePreferencesActivity {
             if (!BuildVars.PM_BUILD)
                 (new UpdaterBottomSheet(getParentActivity(), this, false, null)).show();
         } else if (position == sourceCodeRow) {
-            Browser.openUrl(getParentActivity(), "https://github.com/AyuGram/AyuGram4A");
+            Browser.openUrl(getParentActivity(), "https://github.com/CLIsix/KESGram");
         } else if (position == channelRow) {
-            MessagesController.getInstance(currentAccount).openByUserName(("ayugram1338"), this, 1);
+            MessagesController.getInstance(currentAccount).openByUserName(("kesgram"), this, 1);
+        } else if (position == kesServerRow) {
+            presentFragment(new ChatsPreferencesActivity());
         } else if (position == groupRow) {
-            MessagesController.getInstance(currentAccount).openByUserName(("ayugramchat"), this, 1);
+            //MessagesController.getInstance(currentAccount).openByUserName(("ayugramchat"), this, 1);
         } else if (position == crowdinRow) {
-            Browser.openUrl(getParentActivity(), "https://crowdin.com/project/ayugram");
+            //Browser.openUrl(getParentActivity(), "https://crowdin.com/project/ayugram");
         } else if (position == appearanceRow) {
             presentFragment(new AppearancePreferencesActivity());
         } else if (position == chatsRow) {
@@ -275,20 +281,25 @@ public class MainPreferencesActivity extends BasePreferencesActivity {
                         textCell.setTextAndIcon(LocaleController.getString("SearchAllChatsShort", R.string.SearchAllChatsShort), R.drawable.msg_discussion, true);
                     } else if (position == otherRow) {
                         textCell.setTextAndIcon(LocaleController.getString("LocalOther", R.string.LocalOther), R.drawable.msg_fave, false);
-                    }else if (position == channelRow) {
-                        textCell.setTextAndValueAndIcon(LocaleController.getString("Channel", R.string.Channel), "@ayugram1338", R.drawable.msg_channel, true);
-                    } else if (position == groupRow) {
-                        textCell.setTextAndValueAndIcon(LocaleController.getString("SearchAllChatsShort", R.string.SearchAllChatsShort), "@ayugramchat", R.drawable.msg_groups, true);
-                    } else if (position == crowdinRow) {
-                        textCell.setTextAndValueAndIcon(LocaleController.getString("Crowdin", R.string.Crowdin), "Crowdin", R.drawable.msg_translate, true);
+                    } else if (position == channelRow) {
+                        textCell.setTextAndValueAndIcon(LocaleController.getString("Channel", R.string.Channel), "@kesgram", R.drawable.msg_channel, true);
                     } else if (position == sourceCodeRow) {
-                        textCell.setTextAndValueAndIcon(LocaleController.getString("SourceCode", R.string.SourceCode), "GitHub", R.drawable.msg_delete, false);
+                        textCell.setTextAndValueAndIcon(LocaleController.getString("SourceCode", R.string.SourceCode), "GitHub", R.drawable.burn, false);
+                    } else if (position == kesServerRow) {
+                        textCell.setTextAndIcon(LocaleController.getString("kesServer", R.string.kesServer), R.drawable.msg_filled_passcode_on_solar, true);
                     }
+                    //} else if (position == groupRow) {
+                    //    textCell.setTextAndValueAndIcon(LocaleController.getString("SearchAllChatsShort", R.string.SearchAllChatsShort), "", R.drawable.msg_groups, true);
+                    //} else if (position == crowdinRow) {
+                    //    textCell.setTextAndValueAndIcon(LocaleController.getString("Crowdin", R.string.Crowdin), "Crowdin", R.drawable.msg_translate, true);
+                    //}
                     break;
                 case 3:
                     HeaderCell headerCell = (HeaderCell) holder.itemView;
                     if (position == categoryHeaderRow) {
                         headerCell.setText(LocaleController.getString("Categories", R.string.Categories));
+                    } else if (position == kesgramRow) {
+                        headerCell.setText(LocaleController.getString("kesSettings", R.string.kesCategories));
                     } else if (position == infoHeaderRow) {
                         headerCell.setText(LocaleController.getString("Links", R.string.Links));
                     }
@@ -304,7 +315,7 @@ public class MainPreferencesActivity extends BasePreferencesActivity {
         public int getItemViewType(int position) {
             if (position == categoryDividerRow || position == aboutExteraDividerRow || position == infoDividerRow) {
                 return 1;
-            } else if (position == infoHeaderRow || position == categoryHeaderRow) {
+            } else if (position == infoHeaderRow || position == categoryHeaderRow || position == kesgramRow) {
                 return 3;
             } else if (position == aboutExteraRow) {
                 return 4;

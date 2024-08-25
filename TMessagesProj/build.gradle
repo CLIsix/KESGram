@@ -80,7 +80,7 @@ android {
     ndkVersion "21.4.7075529"
     namespace 'org.telegram.messenger'
 
-    defaultConfig.applicationId = APP_PACKAGE
+    defaultConfig.applicationId = "com.clisix.kesgram"
     defaultConfig.versionCode = Integer.parseInt(APP_VERSION_CODE)
 
     Properties localProperties = new Properties()
@@ -215,7 +215,7 @@ android {
             def formattedDate = date.format('ddMMyyyy')
             def abi = abis.get(variant.productFlavors.get(0).abiVersionCode)
 
-            outputFileName = "ayuGram-${buildType}${abi}-${formattedDate}.apk"
+            outputFileName = "KESGram-${buildType}${abi}-${formattedDate}.apk"
             output.versionCodeOverride = defaultConfig.versionCode * (isPmBuild == "true" ? 100 : 10) + variant.productFlavors.get(0).abiVersionCode
         }
     }

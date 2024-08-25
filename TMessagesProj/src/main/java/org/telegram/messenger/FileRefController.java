@@ -2,7 +2,7 @@ package org.telegram.messenger;
 
 import android.os.SystemClock;
 
-import com.radolyn.ayugram.AyuConstants;
+import com.clisix.kesgram.AyuConstants;
 
 import org.telegram.tgnet.RequestDelegate;
 import org.telegram.tgnet.TLObject;
