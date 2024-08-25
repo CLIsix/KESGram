@@ -1,44 +1,26 @@
 {
   "project_info": {
-    "project_number": "241188506271",
-    "project_id": "ayugram-c6a31",
-    "storage_bucket": "ayugram-c6a31.appspot.com"
+    "project_number": "539434969841",
+    "project_id": "publigram-78052",
+    "storage_bucket": "publigram-78052.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:241188506271:android:2886f3d7ee90b82c7fb0aa",
+        "mobilesdk_app_id": "1:539434969841:android:d78e1cae1e64b74fe9d750",
         "android_client_info": {
-          "package_name": "com.radolyn.ayugram"
+          "package_name": "com.clisix.publigram"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "241188506271-qa0vj8retq732m23dgurh852nrr7h8o6.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.radolyn.ayugram",
-            "certificate_hash": "f27d68285b107eb06cf14c74bb866368f1fbdc7f"
-          }
-        },
-        {
-          "client_id": "241188506271-3n5ru8fm0kn3ujr5tphajrtpu076dqa7.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAzki2--tsG2w92-f842qRmY7UfhLO9sg8"
+          "current_key": "AIzaSyAv4yPUjXYF6jSWao6HHGgkjpIxYrJnZ2s"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "241188506271-3n5ru8fm0kn3ujr5tphajrtpu076dqa7.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
