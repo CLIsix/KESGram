@@ -101,10 +101,8 @@ Well, just fork it.
 
 1. Clone source code using `git clone https://github.com/AyuGram/AyuGram4A.git`
 2. Open the project in Android Studio. It should be opened, **not imported**
-3. Implement the `AyuMessageUtils` & `AyuHistoryHook` classes. It's not that hard, but if you're
-   making your **very** own fork, then you should take some time to write this part of code. Or you can search for a reversed version :)
-4. Replace `google-services.json` (we don't want to see crash reports from your app...)
-5. Generate application certificate and fill API_KEYS:
+3. Replace `google-services.json` (we don't want to see crash reports from your app...)
+4. Generate application certificate and fill API_KEYS:
    ```
    APP_ID = 6
    APP_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
@@ -114,9 +112,11 @@ Well, just fork it.
    SIGNING_KEY_ALIAS = alias
    SIGNING_KEY_STORE_PASSWORD = password
    ```
-6. You are ready to compile `AyuGram`
+5. You are ready to compile `PubliGram`
 
-- **AyuGram** can be built with **Android Studio** or from the command line with **Gradle**:
+- **PubliGram** can be built with **Android Studio** or from the command line with **Gradle**:
+
+_Base code for AyuHistoryHook and AyuMessageUtils derived from [Dr4iv3rNope's Fork](https://github.com/Dr4iv3rNope/NotSoAndroidAyuGram)_
 
 ```
 ./gradlew assembleAfatRelease
