@@ -6,96 +6,42 @@
 
 ## What's this fork even about?
 
-**Is it just exteraGram+Telegraher?**
+To understand why this fork is a necessary one, we need to investigate Telegram:
+<br><br><br>
+![Telegram Defaults](.github/telegramdefault.png)
 
-**AyuGram4A** is a fork of [exteraGram](https://github.com/exteraSquad/exteraGram) with
-some patches from [Telegraher](https://github.com/nikitasius/Telegraher).
+Somewhere in that line is something called MTProto. 
 
-But it's not just exteraGram with Telegraher's commits, **it's a fully reworked version**.
+### What is MTProto?
+MTProto — a cryptographic protocol created by Nikolai Durov and the Telegram team.
 
-The main difference between AyuGram and Telegraher is that AyuGram **saves** your messages history,
-while Telegraher just **caches** them.
-It means that you can clean your cache and still have all saved messages.
+### How does MTProto work?
+I don't know, I didn't check. But look at this important diagram:
 
-Also, AyuGram has **full ghost mode**.
-It allows you to hide your online status from other users, even if you send them
-a message.
+![MTProto Lifecycle](.github/mtprotoworkflow.png)
 
-*And, well, it's not an Iranian Telegram fork with floating TV or something.*
 
-## Features list
+### How can this be mitigated?
 
-### Telegraher's patches:
+What I'm suggesting, is something along the lines of this:
+<br><br><br>
+![KESgram Defaults](.github/kesgramdefault.png)
 
-- Built with official keys
-- Screenshots in secret chats
-- No emulator detection
-- No ads
+### More details to come with code updates.
 
-### Reworked Telegraher's patches:
+---
 
-- Save chats where you were banned/kicked
-- Expire button for TTL photos/videos
-- ...something else probably
+## Features
 
-### Our features:
-
-- Full ghost mode (flexible)
-- Messages history (flexible)
-- Message filters (e.g. hide ads)
-- Customizable edited/deleted marks
-- Local Telegram Premium
-- Sync read states and message history with AyuSync
-- Up to stream Telegram version (*snidely*)
-
-Note that we use **Crashlytics**.
-If you don't want to send crash reports, you can disable it in **exteraGram Preferences**.
-
-**AyuGram4A** does **NOT** include proprietary **exteraGram** features.
-
-## Preview
-
-💖 **Made with extera's Monet theme.**
-
-<img src='.github/demos/demo1.png' width='210'> <img src='.github/demos/demo2.png' width='210'>
-
-<img src='.github/demos/demo3.png' width='210'> <img src='.github/demos/demo4.png' width='210'>
-
-<img src='.github/demos/demo5.png' width='210'> <img src='.github/demos/demo6.png' width='210'>
-
-## Downloads?
-
-Follow our **[Telegram channel](https://t.me/ayugram1338)** and join our [chat](https://t.me/ayugramchat)!
-
-Preview versions can be downloaded
-from the **[dedicated topic](https://t.me/ayugramchat/1238)**.
-
-## Want to throw some money?
-
-Developing AyuGram is not such a simple task.
-**We'd be grateful for any donation <3**
-
-All available methods can be found **[here](https://ayusync.cloud/ui/donate)**.
-
-## AyuSync? What is it?
-
-**AyuSync** is our synchronization service.
-You can either use official server or host your own.
-It can sync read states and message history.
-
-Server backend can be found **[here](https://github.com/AyuGram/AyuSyncBackend)**.
-
-## Want to contribute?
-
-I'd be grateful for any contribution, since I don't really like Java. :)
-
-**Work on any feature you want.**
-
-## Want to fork?
-
-Well, just fork it.
-
-**But please, don't forget to mention us in your README.**
+| Telegather | Ayugram | KESGram  |
+|:------------- |:-------------|:-----|
+| Built with official keys| Full ghost mode |   |
+| Screenshots in secret chats| Messages history  |    |
+| No emulator detection |Message filters |   |
+| No ads |Customizable edited/deleted marks|   |
+| Save chats where you were banned/kicked |Local Telegram Premium|   |
+| Expire button for TTL photos/videos |Sync read states and message history with AyuSync|   |
+|  |Up to stream Telegram version|  |
 
 ## How to build
 
@@ -115,22 +61,10 @@ Well, just fork it.
 5. You are ready to compile `PubliGram`
 
 - **PubliGram** can be built with **Android Studio** or from the command line with **Gradle**:
-
-_Base code for AyuHistoryHook and AyuMessageUtils derived from [Dr4iv3rNope's Fork](https://github.com/Dr4iv3rNope/NotSoAndroidAyuGram)_
-
 ```
 ./gradlew assembleAfatRelease
 ```
-
-## AyuGram Localization
-
-[![Crowdin](https://badges.crowdin.net/ayugram/localized.svg)](https://crowdin.com/project/ayugram)
-[![Crowdin](https://badges.crowdin.net/exteralocales/localized.svg)](https://crowdin.com/project/exteralocales)
-
-We have our own **[Crowdin](https://crowdin.com/project/ayugram)**.
-
-But since **AyuGram** is based on **exteraGram**, also join their project
-at **[Crowdin](https://crowdin.com/project/exteralocales)**!
+- _Base code for AyuHistoryHook and AyuMessageUtils derived from [Dr4iv3rNope's Fork](https://github.com/Dr4iv3rNope/NotSoAndroidAyuGram)_
 
 ## Credits
 
