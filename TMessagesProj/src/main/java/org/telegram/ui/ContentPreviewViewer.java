@@ -212,9 +212,6 @@ public class ContentPreviewViewer {
                 menuVisible = true;
                 containerView.invalidate();
 
-                items.add(LocaleController.getString("SendKesgram", R.string.SendKesgram));
-                icons.add(R.drawable.msg_filled_passcode_on_solar);
-                actions.add(3);
 
                 if (delegate != null) {
 

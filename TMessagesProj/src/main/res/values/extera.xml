@@ -25,6 +25,7 @@
 
     <string name="kesCategories">KESGram Settings</string>
     <string name="kesServer">Key Exchange Swarm</string>
+    <string name="kesMessage">Send KES Message</string>
 
     <!-- Appearance -->
     <string name="AvatarCorners">Avatar Corners</string>

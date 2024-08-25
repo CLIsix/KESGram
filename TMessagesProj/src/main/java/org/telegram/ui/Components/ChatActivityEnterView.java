@@ -178,6 +178,7 @@ public class ChatActivityEnterView extends BlurredFrameLayout implements Notific
     private int commonInputType;
     private boolean stickersEnabled;
     private ActionBarMenuSubItem sendWhenOnlineButton;
+    private ActionBarMenuSubItem sendKesMessage;
 
     public interface ChatActivityEnterViewDelegate {
 
@@ -3496,7 +3497,7 @@ public class ChatActivityEnterView extends BlurredFrameLayout implements Notific
 
             boolean scheduleButtonValue = parentFragment != null && parentFragment.canScheduleMessage();
             boolean sendWithoutSoundButtonValue = !(self || slowModeTimer > 0 && !isInScheduleMode());
-            boolean sendKesgramButtonValue = !(self || slowModeTimer > 0);
+
             ActionBarMenuSubItem translateButton = new TranslateBeforeSendWrapper(getContext(), true, !scheduleButtonValue && !sendWithoutSoundButtonValue, resourcesProvider) {
                 @Override
                 protected void onClick() {
@@ -3533,6 +3534,11 @@ public class ChatActivityEnterView extends BlurredFrameLayout implements Notific
                 });
                 sendPopupLayout.addView(encryptButton, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));
             }
+            // KES BUTTON HERE
+            ActionBarMenuSubItem kesButton = new ActionBarMenuSubItem(getContext(), true, !sendWithoutSoundButtonValue, resourcesProvider);
+            kesButton.setTextAndIcon(LocaleController.getString("kesMessage", R.string.kesMessage), R.drawable.msg_filled_passcode_on);
+            sendPopupLayout.addView(kesButton, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));
+
             if (scheduleButtonValue) {
                 ActionBarMenuSubItem scheduleButton = new ActionBarMenuSubItem(getContext(), true, !sendWithoutSoundButtonValue, resourcesProvider);
                 if (self) {

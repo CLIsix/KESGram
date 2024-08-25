@@ -2578,7 +2578,7 @@ public class ChatAttachAlert extends BottomSheet implements NotificationCenter.N
                     continue;
                 }
                 int num = a;
-                itemCells[a] = new ActionBarMenuSubItem(getContext(), a == 0, a == 2, resourcesProvider);
+                itemCells[a] = new ActionBarMenuSubItem(getContext(), a == 0, a == 3, resourcesProvider);
                 if (num == 0) {
                     itemCells[a].setTextAndIcon(LocaleController.getString("TranslateTo", R.string.TranslateTo), R.drawable.msg_translate);
                     itemCells[a].setSubtext(ExteraConfig.getCurrentLangName());
@@ -2597,8 +2597,7 @@ public class ChatAttachAlert extends BottomSheet implements NotificationCenter.N
                     }
                 } else if (num == 2) {
                     itemCells[a].setTextAndIcon(LocaleController.getString("SendWithoutSound", R.string.SendWithoutSound), R.drawable.input_notify_off);
-                } else {
-                    itemCells[a].setTextAndIcon(LocaleController.getString("SendKesgram", R.string.SendKesgram), R.drawable.msg_filled_passcode_on_solar);
+
                 }
 
                 itemCells[a].setMinimumWidth(AndroidUtilities.dp(196));
