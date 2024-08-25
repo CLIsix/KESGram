@@ -14,3 +14,4 @@ API_KEYS
 *.iml
 *.apk
 *.so
+.vscode/settings.json
