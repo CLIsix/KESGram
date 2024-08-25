@@ -1,6 +1,8 @@
-# AyuGram for Android
+# PubliGram for Android
 
-![AyuGram Logo](.github/AyuGram.png)
+### THIS FORK IS A WORK IN PROGRESS. THERE ARE NO RELEASES YET.
+
+![PubliGram Logo](.github/PubliGram.png)
 
 ## What's this fork even about?
 
