@@ -1,4 +1,4 @@
-# PubliGram for Android
+# KESGram for Android
 
 ### THIS FORK IS A WORK IN PROGRESS. THERE ARE NO RELEASES YET.
 
@@ -60,7 +60,7 @@ What I'm suggesting, is something along the lines of this:
    ```
 5. You are ready to compile `PubliGram`
 
-- **PubliGram** can be built with **Android Studio** or from the command line with **Gradle**:
+- **KESGram** can be built with **Android Studio** or from the command line with **Gradle**:
 ```
 ./gradlew assembleAfatRelease
 ```
