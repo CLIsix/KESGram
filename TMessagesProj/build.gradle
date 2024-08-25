@@ -138,7 +138,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("config/extera.jks")
+            storeFile file("./kesgram.keystore")
             storePassword localProperties.getProperty("SIGNING_KEY_STORE_PASSWORD")
             keyAlias localProperties.getProperty("SIGNING_KEY_ALIAS")
             keyPassword localProperties.getProperty("SIGNING_KEY_PASSWORD")

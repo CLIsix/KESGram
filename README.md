@@ -33,15 +33,15 @@ What I'm suggesting, is something along the lines of this:
 
 ## Features
 
-| Telegather | Ayugram | KESGram  |
-|:------------- |:-------------|:-----|
-| Built with official keys| Full ghost mode |   |
-| Screenshots in secret chats| Messages history  |    |
-| No emulator detection |Message filters |   |
-| No ads |Customizable edited/deleted marks|   |
-| Save chats where you were banned/kicked |Local Telegram Premium|   |
-| Expire button for TTL photos/videos |Sync read states and message history with AyuSync|   |
-|  |Up to stream Telegram version|  |
+| **Telegather**                          | **Ayugram**                                       | **KESGram** |
+|:----------------------------------------|:--------------------------------------------------|:------------|
+| ~~Built with official keys~~            | Full ghost mode                                   |             |
+| Screenshots in secret chats             | Messages history                                  |             |
+| No emulator detection                   | Message filters                                   |             |
+| No ads                                  | Customizable edited/deleted marks                 |             |
+| Save chats where you were banned/kicked | Local Telegram Premium                            |             |
+| Expire button for TTL photos/videos     | Sync read states and message history with AyuSync |             |
+|                                         | Up to stream Telegram version                     |             |
 
 ## How to build
 
@@ -58,7 +58,7 @@ What I'm suggesting, is something along the lines of this:
    SIGNING_KEY_ALIAS = alias
    SIGNING_KEY_STORE_PASSWORD = password
    ```
-5. You are ready to compile `PubliGram`
+5. You are ready to compile `KESGram`
 
 - **KESGram** can be built with **Android Studio** or from the command line with **Gradle**:
 ```

@@ -260,27 +260,27 @@ public class EmuDetector {
     }
 
     private boolean checkDeviceId() {
-        TelephonyManager telephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+       //TelephonyManager telephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
 
-        @SuppressLint("HardwareIds") String deviceId = telephonyManager.getDeviceId();
+       //@SuppressLint("HardwareIds") String deviceId = telephonyManager.getDeviceId();
 
-        for (String known_deviceId : DEVICE_IDS) {
-            if (known_deviceId.equalsIgnoreCase(deviceId)) {
-                return true;
-            }
-        }
+       //for (String known_deviceId : DEVICE_IDS) {
+       //     if (known_deviceId.equalsIgnoreCase(deviceId)) {
+       //         return true;
+       //     }
+       // }
         return false;
     }
 
     private boolean checkImsi() {
-        TelephonyManager telephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        @SuppressLint("HardwareIds") String imsi = telephonyManager.getSubscriberId();
+        //TelephonyManager telephonyManager = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+        //@SuppressLint("HardwareIds") String imsi = telephonyManager.getSubscriberId();
 
-        for (String known_imsi : IMSI_IDS) {
-            if (known_imsi.equalsIgnoreCase(imsi)) {
-                return true;
-            }
-        }
+        //for (String known_imsi : IMSI_IDS) {
+        //    if (known_imsi.equalsIgnoreCase(imsi)) {
+        //        return true;
+        //    }
+        //}
         return false;
     }
 
