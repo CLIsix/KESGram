@@ -1,5 +1,6 @@
 TMessagesProj/.externalNativeBuild/
 TMessagesProj/src/main/java/com/exteragram/messenger/boost/
+.vscode/
 .gradle/
 .idea/
 build/
@@ -14,4 +15,3 @@ API_KEYS
 *.iml
 *.apk
 *.so
-.vscode/settings.json
