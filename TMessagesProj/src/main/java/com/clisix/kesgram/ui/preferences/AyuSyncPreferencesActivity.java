@@ -131,14 +131,6 @@ public class AyuSyncPreferencesActivity extends BasePreferencesActivity implemen
                         AyuSyncController.create();
                     },
                     s -> {
-                        if (s.contains("http") || s.contains("ws")) {
-                            s = s.substring(s.indexOf("://") + 3);
-                        }
-
-                        if (s.endsWith("/")) {
-                            s = s.substring(0, s.length() - 1);
-                        }
-
                         return s;
                     }
             );

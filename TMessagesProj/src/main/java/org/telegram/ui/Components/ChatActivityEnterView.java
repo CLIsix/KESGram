@@ -3534,10 +3534,17 @@ public class ChatActivityEnterView extends BlurredFrameLayout implements Notific
                 });
                 sendPopupLayout.addView(encryptButton, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));
             }
-            // KES BUTTON HERE
+            // KES ENCRYPT SEND BUTTON HERE
             ActionBarMenuSubItem kesButton = new ActionBarMenuSubItem(getContext(), true, !sendWithoutSoundButtonValue, resourcesProvider);
             kesButton.setTextAndIcon(LocaleController.getString("kesMessage", R.string.kesMessage), R.drawable.msg_filled_passcode_on);
             sendPopupLayout.addView(kesButton, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));
+            kesButton.setOnClickListener(v -> {
+                if (sendPopupWindow != null && sendPopupWindow.isShowing()) {
+                    sendPopupWindow.dismiss();
+                }
+                SendMessagesHelper.getInstance(currentAccount).sendMessage(getFieldText().toString(), dialog_id, replyingMessageObject, getThreadMessage(), null, false, null, null, null, true, 0, null, false);
+                setFieldText("");
+            });
 
             if (scheduleButtonValue) {
                 ActionBarMenuSubItem scheduleButton = new ActionBarMenuSubItem(getContext(), true, !sendWithoutSoundButtonValue, resourcesProvider);

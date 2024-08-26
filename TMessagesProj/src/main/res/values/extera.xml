@@ -13,7 +13,7 @@
 
 <resources>
     <string name="exteraAppName" translatable="false">KESGram</string>
-    <string name="Preferences">KESGram Preferences</string>
+    <string name="Preferences">KESGram Settings</string>
 
     <!-- Main Menu -->
     <string name="Links">KESGram Links</string>
@@ -26,6 +26,7 @@
     <string name="kesCategories">KESGram Settings</string>
     <string name="kesServer">Key Exchange Swarm</string>
     <string name="kesMessage">Send KES Message</string>
+    <string name="kesServerName">@kesbot</string>
 
     <!-- Appearance -->
     <string name="AvatarCorners">Avatar Corners</string>

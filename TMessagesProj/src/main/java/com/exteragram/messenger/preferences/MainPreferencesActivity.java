@@ -25,6 +25,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.clisix.kesgram.AyuConfig;
+import com.clisix.kesgram.AyuConstants;
+import com.clisix.kesgram.KESConfig;
+import com.clisix.kesgram.KESConstants;
+import com.clisix.kesgram.sync.AyuSyncController;
+import com.clisix.kesgram.ui.preferences.utils.AyuUi;
 import com.exteragram.messenger.preferences.components.HeaderSettingsCell;
 import com.exteragram.messenger.preferences.updater.UpdaterBottomSheet;
 
@@ -223,7 +229,7 @@ public class MainPreferencesActivity extends BasePreferencesActivity {
         } else if (position == channelRow) {
             MessagesController.getInstance(currentAccount).openByUserName(("kesgram"), this, 1);
         } else if (position == kesServerRow) {
-            presentFragment(new ChatsPreferencesActivity());
+            presentFragment(new AppearancePreferencesActivity());
         } else if (position == groupRow) {
             //MessagesController.getInstance(currentAccount).openByUserName(("ayugramchat"), this, 1);
         } else if (position == crowdinRow) {
