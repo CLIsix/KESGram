@@ -29,6 +29,8 @@ What I'm suggesting, is something along the lines of this:
 
 ### More details to come with code updates.
 
+[KES Server Work In Progress](https://github.com/CLIsix/KESServer)
+
 ---
 
 ## Features
