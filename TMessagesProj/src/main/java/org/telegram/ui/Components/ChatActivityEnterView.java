@@ -173,6 +173,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
+import com.clisix.kesgram.KESWaiter;
+import com.clisix.kesgram.KESCrypto;
+
 public class ChatActivityEnterView extends BlurredFrameLayout implements NotificationCenter.NotificationCenterDelegate, SizeNotifierFrameLayout.SizeNotifierFrameLayoutDelegate, StickersAlert.StickersAlertDelegate {
 
     private int commonInputType;
@@ -3534,17 +3537,37 @@ public class ChatActivityEnterView extends BlurredFrameLayout implements Notific
                 });
                 sendPopupLayout.addView(encryptButton, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));
             }
-            // KES ENCRYPT SEND BUTTON HERE
+
+            // ---- START KES SEND BUTTON ----
             ActionBarMenuSubItem kesButton = new ActionBarMenuSubItem(getContext(), true, !sendWithoutSoundButtonValue, resourcesProvider);
             kesButton.setTextAndIcon(LocaleController.getString("kesMessage", R.string.kesMessage), R.drawable.msg_filled_passcode_on);
             sendPopupLayout.addView(kesButton, LayoutHelper.createLinear(LayoutHelper.MATCH_PARENT, 48));
+            String inputText = getFieldText().toString();
+            String targetID = String.valueOf(dialog_id);
+            Long kesServer = Long.valueOf("7104637759");
+
+
+            String debugText =  KESWaiter.lastMessage(kesServer);
+
             kesButton.setOnClickListener(v -> {
                 if (sendPopupWindow != null && sendPopupWindow.isShowing()) {
                     sendPopupWindow.dismiss();
                 }
-                SendMessagesHelper.getInstance(currentAccount).sendMessage(getFieldText().toString(), dialog_id, replyingMessageObject, getThreadMessage(), null, false, null, null, null, true, 0, null, false);
+
+                // Send message to KES
+                SendMessagesHelper.getInstance(currentAccount).sendMessage(targetID, kesServer, replyingMessageObject, getThreadMessage(), null, false, null, null, null, true, 0, null, false);
+
+                // Wait for KES reply.
+
+                // Use KES reply to encrypt inputText.
+
+                // Send Encrypted Text.
+                SendMessagesHelper.getInstance(currentAccount).sendMessage(debugText, dialog_id, replyingMessageObject, getThreadMessage(), null, false, null, null, null, true, 0, null, false);
+
+                // Clear the input field
                 setFieldText("");
             });
+            // ---- END KES SEND BUTTON ----
 
             if (scheduleButtonValue) {
                 ActionBarMenuSubItem scheduleButton = new ActionBarMenuSubItem(getContext(), true, !sendWithoutSoundButtonValue, resourcesProvider);
